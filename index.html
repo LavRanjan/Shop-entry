@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
+
 body{
 font-family: Arial;
 text-align:center;
@@ -16,24 +17,25 @@ h1{
 font-size:40px;
 }
 
-button{
+.button{
+display:block;
 width:80%;
 padding:30px;
 font-size:28px;
-margin:20px;
-border:none;
+margin:20px auto;
 border-radius:15px;
+text-decoration:none;
+color:white;
 }
 
 .income{
 background:#2ecc71;
-color:white;
 }
 
 .expense{
 background:#e74c3c;
-color:white;
 }
+
 </style>
 </head>
 
@@ -41,13 +43,15 @@ color:white;
 
 <h1>Shop Entry</h1>
 
-<button class="income" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScrNIxHDpbK-mJsNuy0k8RcBMHkR9Dx6dBbKJM52YGz9j5BKw/viewform?usp=pp_url&entry.1654675916=Income'">
+<a class="button income"
+href="https://docs.google.com/forms/d/e/1FAIpQLScrNIxHDpbK-mJsNuy0k8RcBMHkR9Dx6dBbKJM52YGz9j5BKw/viewform?usp=pp_url&entry.1654675916=Income">
 💰 Income
-</button>
+</a>
 
-<button class="expense" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfksNd-jWz7CZ5Am48II6kFyqGeC3PO7ocdqyM6ix-bFS7uFg/viewform?usp=pp_url&entry.1654675916=Expense'">
+<a class="button expense"
+href="https://docs.google.com/forms/d/e/1FAIpQLSfksNd-jWz7CZ5Am48II6kFyqGeC3PO7ocdqyM6ix-bFS7uFg/viewform?usp=pp_url&entry.1654675916=Expense">
 💸 Expense
-</button>
+</a>
 
 </body>
 </html>
